@@ -1,0 +1,7 @@
+name: ShoutAll
+version: 2.0
+main: com.cow.shoutall.ShoutAll
+author: CowNow
+description: Shout to all players in the server.
+depend:
+  - LuckPerms

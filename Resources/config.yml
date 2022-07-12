@@ -1,0 +1,76 @@
+# ShoutAll v2.0
+# by CowNow
+# ============================== #
+# Internal variable list:
+# <permission> - Special permission group in LuckPerms
+# <sec> - Remaining cool-down time
+# <msec> - Skipped cool-down time
+# <prefix> - Prefix of the shouting player (If you set)
+# <player> - Name of the shouting player
+# <server> - Server name in config
+# <bungee> - Server name in bungee config
+# ============================== #
+
+# Cool-down of each permission group in LuckPerms
+# # This list is an example, you can change it yourself.
+cooldown:
+  none: 180
+  vip: 90
+  vip_plus: 60
+  mvp: 30
+  mvp_plus: 10
+
+# Plugin Messages
+Message:
+  Cooldown: "&cYou need to wait <sec>s to use it."
+  CooldownBypass: "&aShouting success! You are in the <permission>，which saves you <msec>s."
+  PlayerOnly: "&cThis command can only be used by players!"
+  ReloadSuccess: "Reloaded the configuration."
+  WrongArg: "&cArguments error."
+  InvalidServer: "&cUnable to use ShoutAll! Please confirm whether the server of the player &e<player> &chas been added to the configuration file? Invalid server: &e<bungee> "
+  ShoutFailed: "&cYour server can't use the ShoutAll, please contact the server staff to report the bug."
+  TokenOutdated: "&cUnknown Token or invalid Token."
+
+# Shout format 1: Just use /hh
+# Example:
+# ➤ [Admin]CowNow is inviting you to join the Bedwars game! Click Here to join!
+ShoutFormat-1:
+  # Format
+  ShoutMessage: "&b➤ <prefix><player> &bis inviting you to join the &e&l<server> game!"
+  # The title can be clicked
+  ClickMessage: "&6&lClick Here"
+  # Prompt when the cursor hovers over the ClickMessage
+  HoverMessage: "&6&nClick to join!"
+  Footer: "&b to join!"
+
+# Shout format 2: /hh + <words>
+# Example
+# [ShoutAll] [Admin]CowNow: SkyWars! Come on! (Click to Teleport)
+ShoutFormat-2:
+  # The prefix of the Shouting Message
+  ShoutPrefix: "&6[ShoutAll] "
+  # The title can be clicked
+  ClickMessage: "&b&l&n(Click to Teleport)"
+  # Prompt when the cursor hovers over the ClickMessage
+  HoverMessage: "&bTeleport to the &e<server> server"
+
+# Server list
+# The Variable named <server> will be use the server name you set.
+# This list is an example, you can change it yourself.
+server:
+  Lobby#1: Lobby1
+  Lobby#2: Lobby2
+  bw-4v4-1: Bedwars-4v4
+  bw-4v4-2: Bedwars-4v4
+  bw-solo-1: Bedwars-solo
+  bw-solo-2: Bedwars-solo
+  RushBed: RushBed
+  Bridge: Bridge
+  MegaWall-1: MegaWall
+  MegaWall-2: MegaWall
+  zombies-aa-1: Zombies
+  zombies-bb-2: Zombies
+  zombies-de-3: Zombies
+  CSGO: Csgo
+  BattleRoyal: BattleRoyal
+  ThePit: ThePit
